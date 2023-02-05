@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/impl/timing/xsim/Top_Level_Datapath_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32M_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32M_HD56
+INFO: [VRFC 10-311] analyzing module RAM32M_HD57
+INFO: [VRFC 10-311] analyzing module RAM32M_HD58
+INFO: [VRFC 10-311] analyzing module RAM32M_HD59
+INFO: [VRFC 10-311] analyzing module RAM32M_HD60
+INFO: [VRFC 10-311] analyzing module RAM32M_HD61
+INFO: [VRFC 10-311] analyzing module RAM32M_HD62
+INFO: [VRFC 10-311] analyzing module RAM32M_HD63
+INFO: [VRFC 10-311] analyzing module RAM32M_HD64
+INFO: [VRFC 10-311] analyzing module RAM32M_HD65
+INFO: [VRFC 10-311] analyzing module RAM32M_HD66
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-311] analyzing module Top_Level_Datapath
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module glbl

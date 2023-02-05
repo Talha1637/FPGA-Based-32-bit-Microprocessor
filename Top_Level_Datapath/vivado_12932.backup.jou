@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 13 10:01:09 2022
+# Process ID: 12932
+# Current directory: C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1812 C:\Users\SFG\Desktop\Digital_Design_Project\Top_Level_Datapath\Top_Level_Datapath.xpr
+# Log file: C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/vivado.log
+# Journal file: C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 9000 ns
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 9000 ns
+current_sim simulation_1
+close_sim
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 9000 ns
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+close_sim
+close_sim
+open_run impl_1
+report_utilization -name utilization_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 9000 ns
+save_wave_config {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg}
+close_sim

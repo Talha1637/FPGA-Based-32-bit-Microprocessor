@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan  6 13:37:06 2023
+# Process ID: 17136
+# Current directory: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14168 C:\Users\SFG\Documents\My notes\32BitProcessor\Digital_Design_Project\Top_Level_Datapath\Top_Level_Datapath.xpr
+# Log file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/vivado.log
+# Journal file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.xpr}
+update_compile_order -fileset sources_1
+save_project_as Top_Level_Datapath_v2018_default C:/Users/SFG/Top_Level_Datapath_v2018_default -force
+import_files
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+restart
+run 10 us
+save_wave_config {C:/Users/SFG/Top_Level_Datapath_v2018_default/Top_Level_Datapath_v2018_default.srcs/sim_1/imports/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg}
+close_sim

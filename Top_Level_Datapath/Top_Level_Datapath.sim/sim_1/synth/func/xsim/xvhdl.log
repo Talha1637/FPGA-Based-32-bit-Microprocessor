@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU32Bit'
+INFO: [VRFC 10-3107] analyzing entity 'PCAdder'
+INFO: [VRFC 10-3107] analyzing entity 'ProgramCounter'
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [VRFC 10-3107] analyzing entity 'Top_Level_Datapath'

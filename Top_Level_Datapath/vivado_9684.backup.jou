@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 30 22:38:32 2022
+# Process ID: 9684
+# Current directory: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12260 C:\Users\SFG\Documents\My notes\32BitProcessor\Digital_Design_Project\Top_Level_Datapath\Top_Level_Datapath.xpr
+# Log file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/vivado.log
+# Journal file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.xpr}
+update_compile_order -fileset sources_1

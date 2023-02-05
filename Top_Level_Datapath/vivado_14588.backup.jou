@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan  4 12:36:27 2023
+# Process ID: 14588
+# Current directory: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12504 C:\Users\SFG\Documents\My notes\32BitProcessor\Digital_Design_Project\Top_Level_Datapath\Top_Level_Datapath.xpr
+# Log file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/vivado.log
+# Journal file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.xpr}
+update_compile_order -fileset sources_1
+save_project_as Top_Level_Datapath_v2018 C:/Users/SFG/Top_Level_Datapath_v2018 -force
+import_files
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

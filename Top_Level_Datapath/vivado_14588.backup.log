@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan  4 12:36:27 2023
+# Process ID: 14588
+# Current directory: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12504 C:\Users\SFG\Documents\My notes\32BitProcessor\Digital_Design_Project\Top_Level_Datapath\Top_Level_Datapath.xpr
+# Log file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/vivado.log
+# Journal file: C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/SFG/Documents/My notes/32BitProcessor/Digital_Design_Project/Top_Level_Datapath'
+INFO: [Project 1-313] Project file moved from 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath' since last save.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2020) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2020) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirIES has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirIES has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPDefaultOutputPath
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+WARNING: [Project 1-231] Project 'Top_Level_Datapath.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+save_project_as Top_Level_Datapath_v2018 C:/Users/SFG/Top_Level_Datapath_v2018 -force
+save_project_as: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 763.875 ; gain = 0.000
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+launch_runs synth_1 -jobs 4
+[Wed Jan  4 12:37:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/SFG/Top_Level_Datapath_v2018/Top_Level_Datapath_v2018.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Jan  4 12:39:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/SFG/Top_Level_Datapath_v2018/Top_Level_Datapath_v2018.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jan  4 12:46:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/SFG/Top_Level_Datapath_v2018/Top_Level_Datapath_v2018.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 13:23:56 2023...

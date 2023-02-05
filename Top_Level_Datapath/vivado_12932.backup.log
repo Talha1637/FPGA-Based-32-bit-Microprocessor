@@ -1,0 +1,816 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 13 10:01:09 2022
+# Process ID: 12932
+# Current directory: C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1812 C:\Users\SFG\Desktop\Digital_Design_Project\Top_Level_Datapath\Top_Level_Datapath.xpr
+# Log file: C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/vivado.log
+# Journal file: C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1020.395 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Level_Datapath_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Top_Level_Datapath_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+"xelab -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_behav xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_behav xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Level_Datapath_tb_behav -key {Behavioral:sim_1:Functional:Top_Level_Datapath_tb} -tclbatch {Top_Level_Datapath_tb.tcl} -view {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Level_Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.395 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 9000 ns
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1238.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.srcs/constrs_1/new/TestData.xdc]
+Finished Parsing XDC File [C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.srcs/constrs_1/new/TestData.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1442.922 ; gain = 422.527
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Level_Datapath_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj Top_Level_Datapath_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU32Bit'
+INFO: [VRFC 10-3107] analyzing entity 'PCAdder'
+INFO: [VRFC 10-3107] analyzing entity 'ProgramCounter'
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [VRFC 10-3107] analyzing entity 'Top_Level_Datapath'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+"xelab -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_func_synth xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_func_synth xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture structure of entity xil_defaultlib.ALU32Bit [alu32bit_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.PCAdder [pcadder_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01011101")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100000111000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100000001000001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111011011101110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110000101110110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10110000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111000101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010101001111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001010100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10110000101100001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111001100111100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000001001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111110101100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100000000000010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100001")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111000000001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01100100000000001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10110011")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000100000000001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000001100001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10110000100000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111011101110001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000111110110000...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(is_clkbwrclk_inverted=...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10110000101100001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000010000000100010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000110000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010000000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001000000010001100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000000100010000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000001010000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000001010011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010001011110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001001000010011001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110110100010")(0...]
+Compiling architecture structure of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111011000001111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000101100100000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000101110111000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010000010101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111000000001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010111000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011100000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101110001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010110011010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101111101000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111000011111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110011111111110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111110101111101011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110111111111001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000011010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111111010001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111011111100111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110000000000110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101011101111101000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000010001010000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111011000000110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111011011110110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000100000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100011101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001111100000001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000100011101000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110100000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001111100011111000...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(is_clkardclk_inverted=...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001100000011001001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001101001010101")(0...]
+Compiling architecture structure of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture structure of entity xil_defaultlib.Top_Level_Datapath [top_level_datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level_datapath_tb
+Built simulation snapshot Top_Level_Datapath_tb_func_synth
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1882.996 ; gain = 407.727
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Level_Datapath_tb_func_synth -key {Post-Synthesis:sim_1:Functional:Top_Level_Datapath_tb} -tclbatch {Top_Level_Datapath_tb.tcl} -view {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Level_Datapath_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1939.199 ; gain = 918.805
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 9000 ns
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Level_Datapath_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Top_Level_Datapath_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+"xelab -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_behav xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_behav xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Level_Datapath_tb_behav -key {Behavioral:sim_1:Functional:Top_Level_Datapath_tb} -tclbatch {Top_Level_Datapath_tb.tcl} -view {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Level_Datapath_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1942.234 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 9000 ns
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Level_Datapath_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj Top_Level_Datapath_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU32Bit'
+INFO: [VRFC 10-3107] analyzing entity 'PCAdder'
+INFO: [VRFC 10-3107] analyzing entity 'ProgramCounter'
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [VRFC 10-3107] analyzing entity 'Top_Level_Datapath'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+"xelab -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_func_synth xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_func_synth xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture structure of entity xil_defaultlib.ALU32Bit [alu32bit_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.PCAdder [pcadder_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01011101")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100000111000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100000001000001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111011011101110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110000101110110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10110000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111000101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010101001111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001010100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10110000101100001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111001100111100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000001001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111110101100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100000000000010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100001")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111000000001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01100100000000001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10110011")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000100000000001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000001100001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10110000100000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111011101110001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000111110110000...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(is_clkbwrclk_inverted=...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10110000101100001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000010000000100010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000110000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010000000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001000000010001100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000000100010000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000001010000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000001010011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010001011110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001001000010011001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110110100010")(0...]
+Compiling architecture structure of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111011000001111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000101100100000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000101110111000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010000010101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111000000001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010111000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011100000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101110001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010110011010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101111101000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111000011111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110011111111110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111110101111101011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110111111111001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000011010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111111010001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111011111100111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110000000000110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101011101111101000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000010001010000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111011000000110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111011011110110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000100000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100011101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001111100000001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000100011101000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110100000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001111100011111000...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(is_clkardclk_inverted=...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001100000011001001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001101001010101")(0...]
+Compiling architecture structure of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture structure of entity xil_defaultlib.Top_Level_Datapath [top_level_datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level_datapath_tb
+Built simulation snapshot Top_Level_Datapath_tb_func_synth
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 2532.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Level_Datapath_tb_func_synth -key {Post-Synthesis:sim_1:Functional:Top_Level_Datapath_tb} -tclbatch {Top_Level_Datapath_tb.tcl} -view {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Level_Datapath_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 2532.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2532.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 2532.852 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2532.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2532.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_Level_Datapath_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj Top_Level_Datapath_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim/Top_Level_Datapath_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU32Bit'
+INFO: [VRFC 10-3107] analyzing entity 'PCAdder'
+INFO: [VRFC 10-3107] analyzing entity 'ProgramCounter'
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [VRFC 10-3107] analyzing entity 'Top_Level_Datapath'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+"xelab -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_func_synth xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2804e47b40214777b7a30b21da180940 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Top_Level_Datapath_tb_func_synth xil_defaultlib.Top_Level_Datapath_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture structure of entity xil_defaultlib.ALU32Bit [alu32bit_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.PCAdder [pcadder_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01011101")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100000001000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100000111000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100000001000001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111011011101110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110000101110110011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10110000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001000100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111000101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010101001111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001010100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10110000101100001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111001100111100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000001001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111110101100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100000000000010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100001")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111000000001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01100100000000001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000100")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10110011")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000100000000001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000001100001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10110000100000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111011101110001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00110000111110110000...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(is_clkbwrclk_inverted=...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10110000101100001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000010000000100010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000110000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010000000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001000000010001100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000000100010000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000001010000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000001010011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010001011110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001001000010011001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101110110100010")(0...]
+Compiling architecture structure of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111011000001111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011100010001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000101100100000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000101110111000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010000010101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111000000001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010111000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011100000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101110001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010110011010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101111101000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111000011111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110011111111110011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111000111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111110101111101011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110111111111001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000011010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111111010001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111011111100111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110000000000110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101011101111101000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000010001010000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111011000000110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111011011110110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000100000001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101000100011101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001111100000001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000100011101000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110100000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001111100011111000...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(is_clkardclk_inverted=...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001100000011001001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001101001010101")(0...]
+Compiling architecture structure of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture structure of entity xil_defaultlib.Top_Level_Datapath [top_level_datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level_datapath_tb
+Built simulation snapshot Top_Level_Datapath_tb_func_synth
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2532.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_Level_Datapath_tb_func_synth -key {Post-Synthesis:sim_1:Functional:Top_Level_Datapath_tb} -tclbatch {Top_Level_Datapath_tb.tcl} -view {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg
+source Top_Level_Datapath_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_Level_Datapath_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 2532.852 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 9000 ns
+save_wave_config {C:/Users/SFG/Desktop/Digital_Design_Project/Top_Level_Datapath/Top_Level_Datapath_tb_func_synth1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 13 10:29:04 2022...
